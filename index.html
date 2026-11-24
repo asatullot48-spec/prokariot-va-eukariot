@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prokariot va eukariot hujayralarning bo‘linishi haqida interaktiv biologiya sayti">
+    <title>Cell Division — Hujayra bo‘linishi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">CELL<span>DIVISION</span></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="nav">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#types">Hujayra turlari</a>
+        <a href="#cycle">Hujayra sikli</a>
+        <a href="#mitosis">Mitoz</a>
+        <a href="#comparison">Taqqoslash</a>
+        <a href="#slides">Taqdimot</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">BIOLOGIYA · HUJAYRA BIOLOGIYASI</p>
+            <h1>Hayot davomiyligi<br><span>hujayra bo‘linishida.</span></h1>
+            <p class="hero-description">
+                Prokariot va eukariot hujayralarning bo‘linish mexanizmlari,
+                hujayra sikli, mitoz fazalari va irsiy axborotning
+                yangi hujayralarga uzatilishini o‘rganing.
+            </p>
+            <div class="hero-actions">
+                <a href="#types" class="btn primary">O‘rganishni boshlash →</a>
+                <a href="#slides" class="btn secondary">Taqdimot rejimi ↗</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="cell">
+                <div class="nucleus"></div>
+            </div>
+            <span class="float-label label-one">DNA</span>
+            <span class="float-label label-two">CELL</span>
+        </div>
+        <div class="hero-stats">
+            <div><strong>2</strong><span>asosiy hujayra tipi</span></div>
+            <div><strong>4</strong><span>mitozning asosiy fazasi</span></div>
+            <div><strong>3</strong><span>interfaza davri</span></div>
+        </div>
+    </section>
+
+    <section class="section" id="types">
+        <div class="section-heading">
+            <p class="eyebrow">01 / ASOSIY TUSHUNCHALAR</p>
+            <h2>Hujayra bo‘linishi<br>nima uchun muhim?</h2>
+            <p>Hujayra bo‘linishi — bitta ona hujayradan yangi hujayralar hosil bo‘lish jarayoni.</p>
+        </div>
+
+        <div class="info-grid">
+            <article class="info-card">
+                <span class="card-number">01</span>
+                <div class="card-icon">🌱</div>
+                <h3>O‘sish va rivojlanish</h3>
+                <p>Ko‘p hujayrali organizmlarda hujayralar soni ortishi embrion rivojlanishi, to‘qima va organlarning shakllanishiga yordam beradi.</p>
+            </article>
+            <article class="info-card">
+                <span class="card-number">02</span>
+                <div class="card-icon">♻️</div>
+                <h3>Yangilanish va tiklanish</h3>
+                <p>Eskirgan yoki shikastlangan hujayralar o‘rnini yangi hujayralar egallaydi. Bu jarayon to‘qimalarning yangilanishida muhimdir.</p>
+            </article>
+            <article class="info-card">
+                <span class="card-number">03</span>
+                <div class="card-icon">🧬</div>
+                <h3>Irsiy axborot</h3>
+                <p>Bo‘linish davomida DNK nusxalanadi va irsiy axborot yangi hujayralarga uzatiladi.</p>
+            </article>
+        </div>
+
+        <div class="types-grid">
+            <article class="type-card pro">
+                <p class="eyebrow">CELL TYPE / 01</p>
+                <h3>Prokariot hujayra</h3>
+                <div class="cell-illustration pro-cell">
+                    <span class="pro-dna"></span>
+                    <span class="pro-dot"></span>
+                    <span class="pro-dot dot-two"></span>
+                </div>
+                <p>Prokariotlarda membrana bilan o‘ralgan yadro bo‘lmaydi. DNK odatda sitoplazmadagi nukleoid sohasida joylashadi.</p>
+                <ul>
+                    <li>Haqiqiy yadro mavjud emas</li>
+                    <li>Membranali organoidlar bo‘lmaydi</li>
+                    <li>Ko‘pincha ikkiga bo‘linish orqali ko‘payadi</li>
+                </ul>
+            </article>
+
+            <article class="type-card euk">
+                <p class="eyebrow">CELL TYPE / 02</p>
+                <h3>Eukariot hujayra</h3>
+                <div class="cell-illustration euk-cell">
+                    <span class="euk-nucleus"></span>
+                    <span class="euk-organelle"></span>
+                    <span class="euk-organelle organelle-two"></span>
+                </div>
+                <p>Eukariotlarda DNK membrana bilan o‘ralgan yadro ichida joylashadi. Hujayra bo‘linishi murakkab bosqichlardan iborat.</p>
+                <ul>
+                    <li>Haqiqiy yadro mavjud</li>
+                    <li>Membranali organoidlarga ega</li>
+                    <li>Mitoz yoki meyoz orqali bo‘linadi</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="cycle">
+        <div class="section-heading">
+            <p class="eyebrow">02 / CELL CYCLE</p>
+            <h2>Hujayra sikli</h2>
+            <p>Hujayraning bir bo‘linishidan keyingi bo‘linishigacha bo‘lgan davr hujayra sikli deyiladi.</p>
+        </div>
+
+        <div class="cycle-layout">
+            <div class="cycle-wheel">
+                <div class="wheel-center">CELL<br>CYCLE</div>
+                <div class="wheel-label g1">G1</div>
+                <div class="wheel-label s">S</div>
+                <div class="wheel-label g2">G2</div>
+                <div class="wheel-label m">M</div>
+            </div>
+            <div class="cycle-details">
+                <article><span>01</span><div><h3>G1 — Birinchi o‘sish davri</h3><p>Hujayra o‘sadi, oqsillar va organoidlar sintezlanadi. Normal faoliyat davom etadi.</p></div></article>
+                <article><span>02</span><div><h3>S — Sintez davri</h3><p>DNK replikatsiyasi sodir bo‘ladi. Xromosomalardagi DNK miqdori ikki baravar ortadi.</p></div></article>
+                <article><span>03</span><div><h3>G2 — Ikkinchi o‘sish davri</h3><p>Hujayra mitozga tayyorlanadi, kerakli oqsillar sintezlanadi va DNK tekshiriladi.</p></div></article>
+                <article><span>04</span><div><h3>M — Bo‘linish davri</h3><p>Mitoz va sitokinez orqali ona hujayradan ikkita qiz hujayra hosil bo‘ladi.</p></div></article>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>ESDA TUTING:</strong> Interfaza G1, S va G2 davrlarini o‘z ichiga oladi. Mitoz esa yadro bo‘linishi jarayonidir.
+        </div>
+    </section>
+
+    <section class="section" id="mitosis">
+        <div class="section-heading">
+            <p class="eyebrow">03 / MITOSIS</p>
+            <h2>Mitoz — yadro bo‘linishi</h2>
+            <p>Mitoz natijasida odatda xromosomalar soni saqlangan holda ikkita qiz yadro hosil bo‘ladi.</p>
+        </div>
+
+        <div class="phase-tabs">
+            <button class="phase-btn active" data-phase="prophase">1. Profaza</button>
+            <button class="phase-btn" data-phase="metaphase">2. Metafaza</button>
+            <button class="phase-btn" data-phase="anaphase">3. Anafaza</button>
+            <button class="phase-btn" data-phase="telophase">4. Telofaza</button>
+        </div>
+
+        <div class="phase-panel">
+            <div class="phase-art" id="phaseArt">
+                <div class="phase-cell">
+                    <div class="phase-nucleus"></div>
+                    <div class="chromosomes" id="chromosomes">
+                        <i></i><i></i><i></i><i></i>
+                    </div>
+                </div>
+            </div>
+            <div class="phase-text">
+                <p class="eyebrow" id="phaseNumber">PHASE / 01</p>
+                <h3 id="phaseTitle">Profaza</h3>
+                <p id="phaseDescription">Xromatin zichlashib, ko‘rinadigan xromosomalarga aylanadi. Yadrocha yo‘qoladi, mitotik urchuq shakllana boshlaydi.</p>
+                <div class="phase-fact" id="phaseFact">Asosiy hodisa: xromosomalarning zichlashishi.</div>
+                <div class="phase-controls">
+                    <button class="btn secondary" id="prevPhase">← Oldingi</button>
+                    <button class="btn primary" id="nextPhase">Keyingi →</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="concept-grid">
+            <article class="concept-card">
+                <span>01</span><h3>Kariokinez</h3>
+                <p>Yadro tarkibidagi xromosomalarning taqsimlanishi va yadroning bo‘linishi jarayoni.</p>
+            </article>
+            <article class="concept-card">
+                <span>02</span><h3>Mitotik urchuq</h3>
+                <p>Xromosomalarni hujayraning qarama-qarshi qutblariga ajratishda qatnashadigan mikronaychalar tizimi.</p>
+            </article>
+            <article class="concept-card">
+                <span>03</span><h3>Sentromera</h3>
+                <p>Xromosomaning singil xromatidalarni birlashtirib turuvchi maxsus sohasi.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="cytokinesis">
+        <div class="section-heading">
+            <p class="eyebrow">04 / CELL DIVISION</p>
+            <h2>Sitokinez — sitoplazmaning bo‘linishi</h2>
+            <p>Yadro bo‘linishidan so‘ng sitoplazma ajralib, alohida qiz hujayralar hosil bo‘ladi.</p>
+        </div>
+        <div class="cyto-grid">
+            <article class="cyto-card">
+                <div class="cyto-picture animal">◉</div>
+                <h3>Hayvon hujayrasi</h3>
+                <p>Hujayra membranasi ichkariga botib, bo‘linish egati hosil qiladi. Natijada ikkita hujayra ajraladi.</p>
+            </article>
+            <article class="cyto-card">
+                <div class="cyto-picture plant">▦</div>
+                <h3>O‘simlik hujayrasi</h3>
+                <p>Hujayra markazida hujayra plastinkasi hosil bo‘ladi. U keyinchalik yangi hujayra devoriga aylanadi.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="comparison">
+        <div class="section-heading">
+            <p class="eyebrow">05 / COMPARISON</p>
+            <h2>Prokariot va eukariot<br>bo‘linishining farqlari</h2>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Belgilar</th><th>Prokariot</th><th>Eukariot</th></tr></thead>
+                <tbody>
+                <tr><td>Yadro</td><td>Membranali yadro yo‘q</td><td>Membranali yadro mavjud</td></tr>
+                <tr><td>DNK joylashuvi</td><td>Nukleoid sohasida</td><td>Yadroda</td></tr>
+                <tr><td>Bo‘linish turi</td><td>Ikkiga bo‘linish</td><td>Mitoz yoki meyoz</td></tr>
+                <tr><td>Mitotik urchuq</td><td>Mavjud emas</td><td>Mitozda hosil bo‘ladi</td></tr>
+                <tr><td>Jarayon murakkabligi</td><td>Nisbatan sodda</td><td>Murakkab va bosqichli</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="prokaryotic">
+        <div class="section-heading">
+            <p class="eyebrow">06 / BINARY FISSION</p>
+            <h2>Prokariotlarning ikkiga bo‘linishi</h2>
+            <p>Bakteriyalarda ko‘payishning keng tarqalgan usuli ikkiga bo‘linishdir.</p>
+        </div>
+        <div class="steps">
+            <article><span>01</span><h3>DNK nusxalanishi</h3><p>Hujayra DNKsi replikatsiyalanadi.</p></article>
+            <article><span>02</span><h3>Hujayraning cho‘zilishi</h3><p>Hujayra o‘sadi va DNK nusxalari bir-biridan uzoqlashadi.</p></article>
+            <article><span>03</span><h3>To‘siq hosil bo‘lishi</h3><p>Hujayra markazida bo‘linish to‘sig‘i shakllanadi.</p></article>
+            <article><span>04</span><h3>Ikki hujayra</h3><p>Natijada ikkita qiz bakteriya hosil bo‘ladi.</p></article>
+        </div>
+    </section>
+
+    <section class="section" id="slides">
+        <div class="section-heading">
+            <p class="eyebrow">07 / PRESENTATION MODE</p>
+            <h2>Universitet taqdimoti</h2>
+            <p>Mavzuni slaydlar orqali namoyish eting. Tugmalar yoki klaviaturadagi ← va → tugmalaridan foydalaning.</p>
+        </div>
+        <div class="presentation">
+            <div class="slide" id="slide">
+                <p class="eyebrow">BIOLOGY PRESENTATION</p>
+                <h2>HUJAYRA BO‘LINISHI</h2>
+                <p>Prokariot va eukariot hujayralarning bo‘linish mexanizmlari</p>
+                <span class="slide-index">01 / 08</span>
+            </div>
+            <div class="slide-controls">
+                <button class="btn secondary" id="prevSlide">← Oldingi</button>
+                <span id="slideCount">1 / 8</span>
+                <button class="btn primary" id="nextSlide">Keyingi →</button>
+                <button class="btn secondary" id="fullScreen">⛶ To‘liq ekran</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+        <div class="section-heading">
+            <p class="eyebrow">08 / KNOWLEDGE CHECK</p>
+            <h2>Bilimingizni sinab ko‘ring</h2>
+            <p>Quyidagi savollarga javob bering va natijangizni ko‘ring.</p>
+        </div>
+        <div class="quiz-box">
+            <p id="questionNumber">Savol 1 / 5</p>
+            <h3 id="question">Mitoz nechta asosiy fazadan iborat?</h3>
+            <div id="answers" class="answers"></div>
+            <p id="quizFeedback"></p>
+            <button class="btn primary" id="nextQuestion">Keyingi savol →</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <a href="#" class="logo">CELL<span>DIVISION</span></a>
+    <p>Hujayra biologiyasini interaktiv o‘rganish platformasi.</p>
+    <p class="copyright">© 2026 · Biology Education Project</p>
+</footer>
+
+</body>
+</html>
